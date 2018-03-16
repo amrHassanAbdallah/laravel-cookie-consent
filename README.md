@@ -33,6 +33,19 @@ composer require spatie/laravel-cookie-consent
 
 The package will automatically register itself.
 
+ after installation in 5.4.* laravel you will need to  include the package   inside your config/app.php
+ ``` bash
+    'providers' => [
+	    ......
+	    Spatie\CookieConsent\CookieConsentServiceProvider::class ,
+	    ......
+    ],
+
+
+ ```
+
+ 
+
 Optionally you can publish the config-file:
 
 ```bash
